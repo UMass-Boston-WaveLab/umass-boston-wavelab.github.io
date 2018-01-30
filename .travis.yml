@@ -1,0 +1,18 @@
+sudo: false
+before_script:
+- curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git cobalt-org/cobalt.rs
+  --crate cobalt --force --target x86_64-unknown-linux-gnu --tag v0.11.1
+- export PATH="$PATH:~/.cargo/bin"
+script:
+- cobalt build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GH_TOKEN"
+  local_dir: _site
+  target_branch: master
+  on:
+    branch: source
+env:
+  global:
+    secure: DOi6RVE770VmNSzhwlEWwtE7bGhAmHFrvspC4KqkoEtVkNGXWavTc3iX6P4ZJ0WbRh+qg8pGXVkYJUKNGRsWhHujfzFzA9htDgi4e2vr+9Ury9IfiOjEy2ybG8utpHtVyTyqO1qhoH8I5Ny4PE/zF8GsXTmnXnUrzsLnnqsID3LZ7TH8O0inImYj1MGkjnJaTDbRA5WVlZqBypBxEIEmx1NTW2121xaOO5HIoHWEzZiY19ElgM1tAT+ANb+If4HMpU3XfPxJuJqd9b5oFeFntl7PK1MvFDs1HD44aGC+y1M1ItvAsJu5XMlssnkMeS7sX0Y7NKkgQrNu/mGENwQ4G80vhgGadcKSBC7enW2UTsvr7tTzdqhIcyu+Av/gb4tr5BT8auVBszkBwopMO46PjAoR3/SPpe1mMExHOCF8cuKhkukEahIUa1zImynvXNj39pPnLdM0u1Mi7NpyqubP0jjVqrbE22a4wkduWvACkeni9CGDQYJyp6aIdEkomkZrX/vVkaQc19ly/kfhJtcS4mWkI1Y5625vdY0NAUtram5hFC9TDUzEFetQDHCVm9hIBCu/H98MFG4jRtl+61Z2sAsmUVzQFB44cmUIsOYVfjdMAOWDrw8VmZ8rVICGrouqaZn/MSBXxyL/nvWnhJYOtt+GoJii9eXZz1814gqLm4U=
