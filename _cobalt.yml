@@ -4,12 +4,18 @@ ignore:
 template_extensions:
   - md
   - liquid
+include_drafts: false
 
 site:
   title: Wavelab Blog
   description: UMass Boston WaveLab Blog
   base_url: ~
 posts:
-  rss: rss.xml
-syntax_highlight:
-  theme: "base16-ocean.dark"
+  title: ~
+  description: ~
+  dir: posts
+  drafts_dir: _drafts
+  order: Desc
+  rss: ~
+  jsonfeed: ~
+  default: {}
