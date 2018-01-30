@@ -1,0 +1,59 @@
+/* These could be better named to avoid confusion */
+.posts-container {
+ display: block;
+ position: absolute;
+ width: 75%;
+ margin: auto;
+ margin-top: 10%;
+ left: 0;
+ right: 0;
+
+}
+
+.post-container {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+.post-header {
+    margin-bottom: 2.5%;
+}
+
+.post-title {
+    font-weight: 600;
+    margin-bottom: 0.6%;
+}
+
+.post-author {
+    color: #2B2B2B;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+.post-content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.95em;
+    text-indent: 2%;
+}
+
+.post-footer {
+
+}
+
+.post-sep {
+    display: block;
+    position: relative;
+    height: 4px;
+    width: 75%;
+    margin: 5% auto 5% auto;
+    border-radius: 10px;
+    border-color: #BAE4E5;
+    background: #BAE4E5;
+}
+
+.post-link {
+    color: #ff7979;
+}
+
+
+
+

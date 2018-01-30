@@ -1,0 +1,15 @@
+source: "."
+ignore:
+  - README.md
+template_extensions:
+  - md
+  - liquid
+
+site:
+  title: Wavelab Blog
+  description: UMass Boston WaveLab Blog
+  base_url: ~
+posts:
+  rss: rss.xml
+syntax_highlight:
+  theme: "base16-ocean.dark"

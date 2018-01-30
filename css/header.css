@@ -1,0 +1,103 @@
+/*
+    Reference pallete: https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55
+*/
+
+.splash {
+    display: block;
+    position: relative;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: #495867;
+}
+
+#splash-text {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+    color: #F7F7FF;
+    font-size: 4em;
+}
+
+.nav-item {
+    display: inline-flex;
+    float: right;
+    padding-right: 0.6%;
+    padding-left: 0.6%;
+    margin: auto auto;
+    overflow: auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+.nav-icon {
+    color:#F7F7FF;
+    padding-right: 4px;
+    
+}
+
+.nav-text {
+    color: #BDD5EA;
+}
+
+.clear {
+    clear: both;
+    line-height: 0;
+}
+
+#nav-space {
+    display: inline-flex;
+    float: right;
+    padding-left: 0.6%;
+    margin: auto auto;
+    overflow: auto;
+}
+
+nav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding-top: 1%;
+    right: 7px;
+    margin: 0;
+}
+
+body {
+    background-color: #F7F7FF;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Default header sizes used for everything except post-content */ 
+h1 { 
+    font-size: 2em; 
+}
+
+h2 { 
+    font-size: 1.5em; 
+}
+
+h3 { 
+    font-size: 1.17em; 
+}
+
+h4 { 
+    font-size: 1.12em; 
+}
+
+h5 { 
+    font-size: .83em; 
+}
+
+h6 { 
+    font-size: .75em;
+}
