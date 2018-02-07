@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.liquid %}
+    </head>
+    <body>
+        <header>
+            {% include header.liquid %}
+        </header>
+        <div class="posts-container">
+            <div class="post-container">
+                <div class="post-content"> 
+                    {{ page.content }} 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
