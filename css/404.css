@@ -1,0 +1,33 @@
+#text-container {
+    display: block;
+    position: relative;
+    top: 10%;
+    margin: auto;
+    text-align: center;
+    color: #F7F7FF;
+}
+
+#top {
+    display: block;
+    position: relative;
+    width: 100vw;
+    font-size: 20vmax;
+    letter-spacing: 0.05em;
+    margin: auto;
+}
+#bottom {
+    display: block;
+    position: relative;
+    width: 100vw;
+    font-size: 5vmax;
+    font-weight: 300;
+    margin: auto;
+}
+body {
+    background-color: #495867;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: geometricPrecision;
+}
