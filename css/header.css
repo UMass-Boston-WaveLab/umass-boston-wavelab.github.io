@@ -6,50 +6,47 @@
     display: block;
     position: relative;
     height: 30vh;
-    margin: 0;
-    padding: 0;
-    top: 0;
+    text-align: center;
     background-color: #495867;
+    margin: auto;
 }
 
 #splash-text {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    position: relative;
+    top: 20%;
+    font-size: 5vmax;
     margin: auto;
-    text-align: center;
     color: #F7F7FF;
-    font-size: 4em;
+}
+#nav-container {
+    display: block;
+    position: relative;
+    top: 30%;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-size: 1.1vmax;
 }
 
 .nav-item {
-    display: inline-flex;
-    float: right;
-    padding-right: 0.6%;
-    padding-left: 0.6%;
-    margin: auto auto;
-    overflow: auto;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 0.8em;
+    color: #F7F7FF;
+    display: inline-block;
+    position: relative;
+    margin: auto 0.4vw;
 }
 
 .nav-icon {
-    color:#F7F7FF;
-    padding-right: 4px;
-    
+    color: #F7F7FF;
+    margin-right: 0.2vw;
 }
 
 .nav-text {
-    color: #BDD5EA;
+    color: #F7F7FF;
 }
 
-.clear {
-    clear: both;
-    line-height: 0;
-}
 
+/*
 #nav-space {
     display: inline-flex;
     float: right;
@@ -57,19 +54,14 @@
     margin: auto auto;
     overflow: auto;
 }
+*/
 
-nav {
-    display: block;
-    position: absolute;
-    width: 100%;
-    padding-top: 1%;
-    right: 7px;
-    margin: 0;
-}
+
 
 body {
     background-color: #F7F7FF;
-    margin: 0px;
+    margin: auto;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 

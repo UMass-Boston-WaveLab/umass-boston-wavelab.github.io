@@ -14,7 +14,7 @@ title: WaveLab Blog
                 <div class="post-container">
                     <div class="post-header">
                         <h1 class="post-title">{{ post.title }}</h1>
-                        <h5 class ="post-author"><i>By {{ post.description }} on {{ post.published_date | date: "%m-%d-%Y" }} </i></h5>
+                        <h5 class ="post-author"><i>By {{ post.data.author }} on {{ post.published_date | date: "%m-%d-%Y" }} </i></h5>
                     </div>
                     <div class="post-content"> 
                         {{ post.content | truncatewords: 200 }} 

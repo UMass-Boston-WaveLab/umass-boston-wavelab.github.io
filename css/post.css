@@ -1,13 +1,15 @@
-/* These could be better named to avoid confusion */
+/* 
+    Note that posts-container contains the post-containers
+    It could be better named to avoid confusion 
+*/
 .posts-container {
  display: block;
- position: absolute;
+ position: relative;
  width: 75%;
  margin: auto;
  margin-top: 10%;
  left: 0;
  right: 0;
-
 }
 
 .post-container {
@@ -31,12 +33,14 @@
 }
 .post-content {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.95em;
+    font-size: 1em;
     text-indent: 2%;
 }
 
 .post-footer {
-
+    display: block;
+    position: relative;
+    
 }
 
 .post-sep {
