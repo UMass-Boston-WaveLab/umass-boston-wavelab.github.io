@@ -1,6 +1,4 @@
 source: "."
-ignore:
-  - README.md
 template_extensions:
   - md
   - liquid
