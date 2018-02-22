@@ -56,7 +56,9 @@
 }
 */
 
-
+html {
+    text-rendering: geometricPrecision;
+}
 
 body {
     background-color: #F7F7FF;
@@ -93,3 +95,4 @@ h5 {
 h6 { 
     font-size: .75em;
 }
+
